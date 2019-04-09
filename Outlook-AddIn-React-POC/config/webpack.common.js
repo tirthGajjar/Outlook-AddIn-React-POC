@@ -98,11 +98,11 @@ module.exports = {
     },
     optimization: {
         splitChunks: {
-          chunks: 'async',
-          minChunks: Infinity,
-          name: 'vendor'
+            chunks: 'async',
+            minChunks: Infinity,
+            name: 'vendor'
         }
-      },
+    },
     plugins: [
         ...WEBPACK_PLUGINS,
         new ExtractTextPlugin('[name].[hash].css'),
